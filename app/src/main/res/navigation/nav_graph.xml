@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/moodEntryFragment">
 
     <fragment
         android:id="@+id/moodEntryFragment"
         android:name="com.example.moodtracker.fragments.MoodEntryFragment"
-        android:label="fragment_mood_entry"
-        tools:layout="@layout/fragment_mood_entry" />
+        android:label="Nowy wpis" />
+
+    <fragment
+        android:id="@+id/moodHistoryFragment"
+        android:name="com.example.moodtracker.fragments.MoodHistoryFragment"
+        android:label="Historia" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.moodtracker.fragments.SettingsFragment"
+        android:label="Ustawienia" />
 </navigation>
+
