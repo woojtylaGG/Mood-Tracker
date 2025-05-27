@@ -11,6 +11,9 @@
         <action
             android:id="@+id/action_moodEntry_to_moodHistory"
             app:destination="@id/moodHistoryFragment" />
+        <action
+            android:id="@+id/action_moodEntry_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
 
     <fragment
@@ -31,8 +34,10 @@
         android:name="com.example.moodtracker.fragments.MoodDetailsFragment"
         android:label="Szczegóły" />
 
+
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.moodtracker.fragments.SettingsFragment"
-        android:label="Ustawienia" />
+        android:label="Settings" />
+
 </navigation>

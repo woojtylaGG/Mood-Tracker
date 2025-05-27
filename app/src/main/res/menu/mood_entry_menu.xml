@@ -5,4 +5,10 @@
         android:title="Historia"
         android:icon="@android:drawable/ic_menu_view"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Ustawienia"
+        android:icon="@android:drawable/ic_menu_manage"
+        app:showAsAction="ifRoom" />
 </menu>

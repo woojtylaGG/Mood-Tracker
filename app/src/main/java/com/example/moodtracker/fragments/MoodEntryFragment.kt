@@ -30,13 +30,16 @@ class MoodEntryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         val toolbar = binding.toolbar
         toolbar.inflateMenu(R.menu.mood_entry_menu)
         toolbar.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 R.id.action_history -> {
                     findNavController().navigate(R.id.action_moodEntry_to_moodHistory)
+                    true
+                }
+                R.id.action_settings -> {
+                    findNavController().navigate(R.id.action_moodEntry_to_settingsFragment)
                     true
                 }
                 else -> false
