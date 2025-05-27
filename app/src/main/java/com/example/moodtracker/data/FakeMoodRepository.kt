@@ -9,7 +9,9 @@ object FakeMoodRepository {
         moodList.add(0, entry)
     }
 
-    fun getMoodById(id: UUID): MoodEntry? {
-        return moodList.find { it.id == id }
+    fun getMoodById(id: String?): MoodEntry? {
+        return id?.let { uuid ->
+            moodList.find { it.id == UUID.fromString(uuid) }
+        }
     }
 }

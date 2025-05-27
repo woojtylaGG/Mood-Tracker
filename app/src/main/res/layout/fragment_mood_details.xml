@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.MoodDetailsFragment">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <View
+        android:id="@+id/moodIndicator"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="8dp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/moodDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opis"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/moodCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategoria"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/moodActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aktywność"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/moodSleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sen"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/moodRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ocena dnia"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/moodDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuń"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
