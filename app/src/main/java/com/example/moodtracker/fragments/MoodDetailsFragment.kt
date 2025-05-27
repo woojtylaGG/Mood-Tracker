@@ -53,9 +53,9 @@ class MoodDetailsFragment : Fragment() {
 
             val moodColor = when (entry.mood) {
                 2 -> android.R.color.holo_green_light
-                1 -> android.R.color.darker_gray
-                0 -> android.R.color.holo_blue_light
-                else -> android.R.color.darker_gray
+                1 -> android.R.color.holo_orange_light
+                0 -> android.R.color.holo_red_dark
+                else -> android.R.color.black
             }
             moodIndicator.setBackgroundColor(resources.getColor(moodColor, null))
         }
